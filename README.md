@@ -32,7 +32,7 @@ You'll need to have granted yourself read access to /dev/cxadc0 and read/write a
 
 * Amplitude Messurement
 
-![Main Window][assets/images/CXADC-GUI-Capture.PNG]
+![Main Window](assets/images/CXADC-GUI-Capture.PNG)
 
 ## Limitations:
 
