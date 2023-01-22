@@ -1,26 +1,53 @@
-# cx_capture_app:  EXPERIMENTAL!! ALPHA PHASE!!
-A linux GUI capture application for connexant cx2338[0/1/2/3] and cx25800 based cards.
+## CX Capture App 
 
-# Information:
+EXPERIMENTAL!! ALPHA PHASE!!
 
-  You will need to install GNU Radio Companion for this to work, and any depndencies it needs. The installation instructions for your distro can be found by searching google.
-  You will need the cxadc driver that supports `center_offset` value, which as of this writing is only my version: https://github.com/tandersn/cxadc-linux3
-  Use the `center_offset` value to correct for non-centered singals.
-  The scale of the graph is +127 to -127, the `100` notations on the amplitude axis do not represent `100%`.
-  You'll need to have granted yourself read access to /dev/cxadc0 and read/write access to the cxadc sysfs parameters (be in `admin` group).
+A Linux GUI capture application for Connexant cx2338[0/1/2/3] and cx25800 based cards.
 
+## Dependencys
 
-# WARNING!!! 
-  Still very experimental. Not sure if this is the best way to develop a capture app for cxadc, it's just what i could get done quickly. I also haven't tested A/B capturing with this and straight `cat /dev/cxadc0`. 
+* [GNU Radio Companion](https://wiki.gnuradio.org/index.php/InstallingGR)
 
-# Limitations:
-  16 bit mode is not support.
-  Auto adjustment of level not support (like how cxlvlcavdd does for CAV discs). As such, probably not best solution for CAV discs.
-  Can't change vmux from within the program (this would require further updates to cxadc driver to allow real time vmux change). Also, vmux changes won't be recognized while the program is running.
+* [CXADC](https://github.com/happycube/cxadc-linux3)
 
+## Notes
 
+You will need to install GNU Radio Companion for this to work, and any depndencies it needs. 
 
- 
+You will need a version of the cxadc driver that supports `center_offset value` (Current release has this) 
 
+Use the `center_offset value` to correct for non-centered singals. 
 
+The scale of the graph is +127 to -127, the 100 notations on the amplitude axis do not represent `100%`.
 
+You'll need to have granted yourself read access to /dev/cxadc0 and read/write access to the cxadc sysfs parameters (be in admin group).
+
+## Features & Usage
+
+* Capture Start/Stop
+
+* Capture File Path (Output)
+
+* Gain Level Adjust
+
+* Amplitude Messurement
+
+![Main Window][assets/images/CXADC-GUI-Capture.PNG]
+
+## Limitations:
+
+* 16 bit mode is not supported. 
+
+* Auto adjustment of level not support (like how cxlvlcavdd does for CAV LaserDiscs). As such, probably not best solution for CAV discs. 
+
+* Can't change vmux from within the program (this would require further updates to cxadc driver to allow real time vmux change). 
+
+* vmux changes won't be recognized while the program is running.
+
+## WARNING!!!
+
+Still very experimental. 
+
+Not sure if this is the best way to develop a capture app for cxadc, it's just what i could get done quickly. 
+
+I also haven't tested A/B capturing with this and straight `cat /dev/cxadc0`.
