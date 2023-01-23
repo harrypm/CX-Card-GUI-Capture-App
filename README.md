@@ -4,6 +4,10 @@ EXPERIMENTAL!! ALPHA PHASE!!
 
 A Linux GUI capture application for Connexant cx2338[0/1/2/3] and cx25800 based cards.
 
+## GUI Layout
+
+![Current](https://user-images.githubusercontent.com/56382624/214147114-b8e9ed60-855c-4a3b-b853-93f7b15c8fd3.png)
+
 ## Dependencys
 
 * [GNU Radio Companion](https://wiki.gnuradio.org/index.php/InstallingGR)
@@ -32,8 +36,6 @@ You'll need to have granted yourself read access to /dev/cxadc0 and read/write a
 
 * Amplitude Messurement
 
-![Main Window](assets/images/CXADC-GUI-Capture.PNG)
-
 ## Limitations:
 
 * 16 bit mode is not supported. 
@@ -43,6 +45,10 @@ You'll need to have granted yourself read access to /dev/cxadc0 and read/write a
 * Can't change vmux from within the program (this would require further updates to cxadc driver to allow real time vmux change). 
 
 * vmux changes won't be recognized while the program is running.
+
+## Demos
+
+[YouTube](https://www.youtube.com/watch?v=hENPuOPslAA)
 
 ## WARNING!!!
 
