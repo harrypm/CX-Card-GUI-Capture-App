@@ -24,13 +24,29 @@ Use the `center_offset value` to correct for non-centered singals.
 
 The scale of the graph is +127 to -127, the 100 notations on the amplitude axis do not represent `100%`.
 
-You'll need to have granted yourself read access to /dev/cxadc0 and read/write access to the cxadc sysfs parameters (be in admin group).
+## Installation
 
-## Features & Usage
+Ensure your GNU Radio Installation is `3.10.5.0 (Python 3.10.6)` or newer.
+
+You'll need to have granted yourself read access to `/dev/cxadc0`
+
+Read/write access to the cxadc sysfs parameters (be in admin group).
+
+`/sys/module/cxadc`
+
+`/dev/cxadc0`
+
+## Usage 
+
+Open via phython in terminal `./cx_capture_app`
+
+Open via GNU Radio Companion in GUI `cx_capture_app.grc`
+
+## Features
 
 * Capture Start/Stop
 
-* Capture File Path (Output)
+* Set Capture File Path
 
 * Gain Level Adjust
 
