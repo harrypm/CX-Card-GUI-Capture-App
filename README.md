@@ -12,6 +12,8 @@ A Linux GUI capture application for Connexant cx2338[0/1/2/3] and cx25800 based 
 
 * [GNU Radio Companion](https://wiki.gnuradio.org/index.php/InstallingGR)
 
+Ensure your GNU Radio Installation is `3.10.5.0 (Python 3.10.6)` or newer.
+
 * [CXADC](https://github.com/happycube/cxadc-linux3)
 
 ## Notes
@@ -26,15 +28,11 @@ The scale of the graph is +127 to -127, the 100 notations on the amplitude axis 
 
 ## Installation
 
-Ensure your GNU Radio Installation is `3.10.5.0 (Python 3.10.6)` or newer.
-
 You'll need to have granted yourself read access to `/dev/cxadc0`
 
 Read/write access to the cxadc sysfs parameters (be in admin group).
 
-`/sys/module/cxadc`
-
-`/dev/cxadc0`
+CXADC Locations `/sys/module/cxadc` & `/dev/cxadc0`
 
 ## Usage 
 
@@ -61,6 +59,10 @@ Open via GNU Radio Companion in GUI `cx_capture_app.grc`
 * Can't change vmux from within the program (this would require further updates to cxadc driver to allow real time vmux change). 
 
 * vmux changes won't be recognized while the program is running.
+
+## Modify & Update
+
+You can edit the .GRC file in GNU Radio and then preview with <kbd>F5</kbd> and to export to a working python script press <kbd>F6</kbd>  
 
 ## Demos
 
