@@ -6,7 +6,7 @@ A Linux GUI capture application for Connexant cx2338[0/1/2/3] and cx25800 based 
 
 ## GUI Layout
 
-![Current](https://user-images.githubusercontent.com/56382624/214147114-b8e9ed60-855c-4a3b-b853-93f7b15c8fd3.png)
+![Current](https://user-images.githubusercontent.com/56382624/222059131-28a64a03-060f-4b74-8e82-3b28b42c4a84.png)
 
 ## Dependencys
 
@@ -28,11 +28,11 @@ The scale of the graph is +127 to -127, the 100 notations on the amplitude axis 
 
 ## Installation
 
-You'll need to have granted yourself read access to `/dev/cxadc0`
+You'll need to have granted yourself read access to `/class/cxadc0`
 
 Read/write access to the cxadc sysfs parameters (be in admin group).
 
-CXADC Locations `/sys/module/cxadc` & `/dev/cxadc0`
+CXADC Locations `/sys/class/cxadc` & `/dev/cxadc0`
 
 ## Usage 
 
@@ -68,7 +68,7 @@ You can edit the .GRC file in GNU Radio and then preview with <kbd>F5</kbd> and 
 
 [YouTube](https://www.youtube.com/watch?v=hENPuOPslAA)
 
-## WARNING!!!
+## Notes & Warnings
 
 Still very experimental. 
 
